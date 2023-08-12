@@ -22,6 +22,13 @@ header {
   padding-bottom: 25px;
 }
 
+.header-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 68.5%;
+}
+
 .header-logo {
   display: block;
   background-image: url(../images/logo.svg);
@@ -206,7 +213,13 @@ header {
   text-decoration: none;
   background-color: #FBB731;
   border-radius: 5px;
-  padding: 20px 25px;
+  padding: 18px 24px;
+  border: 1px solid #FBB731;
+}
+
+.banner-link:hover {
+  background-color: transparent;
+  color: #FBB731;
 }
 
 .menu {
@@ -293,6 +306,11 @@ header {
   gap: 11px;
 }
 
+.menu-grid-btn:hover {
+  cursor: pointer;
+  background-color: #F37335;
+}
+
 .menu-grid-icon {
   background-image: url(../images/cart-menu.svg);
   /* background-size: cover;
@@ -348,7 +366,12 @@ header {
   margin-top: 0;
 }
 
-.footer-item li {
+.footer-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-list li {
   margin-bottom: 9px;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
@@ -357,10 +380,14 @@ header {
   line-height: 24px;
 }
 
-.footer-item a {
+.footer-list a {
   color: #DEDEDE;
   text-decoration: none;
   font-weight: 400;
+}
+
+.footer-list a:hover {
+  color: #FBB731;
 }
 
 .footer-item span {
@@ -370,18 +397,20 @@ header {
   margin-bottom: 3px;
 }
 
-.footer-tel ul {
-  font-size: 20px;
-  font-weight: 900;
-  color: #FBB731;
+.footer-list-tel {
   margin-top: 0;
 }
 
-.footer-tel li {
+.footer-list-tel li {
   margin-bottom: 15px;
 }
 
-.footer-list {
-  padding: 0;
-  list-style-type: none;
+.footer-list-tel a {
+  font-size: 20px;
+  font-weight: 900;
+  color: #FBB731;
+}
+
+.footer-list-tel a:hover {
+  color: #DEDEDE;
 }
